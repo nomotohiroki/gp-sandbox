@@ -5,11 +5,11 @@
 window.addEventListener('pagehide', () => {
   console.log('this is pagehide');
   return 'return this is pagehide';
-});
+}, false);
 window.addEventListener('beforeunload', () => {
   console.log('this is beforeunload');
   return 'return this is beforeunload';
-});
+}, false);
 </script>
 </head>
 <body>
