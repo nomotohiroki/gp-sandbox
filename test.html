@@ -2,11 +2,11 @@
 <html>
 <head>
 <script>
-window.addEventListener('pagehide', () => {
+window.addEventListener('pagehide', (e) => {
   console.log('this is pagehide');
   return 'return this is pagehide';
 }, false);
-window.addEventListener('beforeunload', () => {
+window.addEventListener('beforeunload', (e) => {
   console.log('this is beforeunload');
   return 'return this is beforeunload';
 }, false);
